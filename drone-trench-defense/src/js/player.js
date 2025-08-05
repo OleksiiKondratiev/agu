@@ -1,6 +1,6 @@
 // player.js
 
-class Player {
+export default class Player {
     constructor(name, health, damage) {
         this.name = name;
         this.health = health;
@@ -26,5 +26,3 @@ class Player {
         return this.health > 0;
     }
 }
-
-export default Player;

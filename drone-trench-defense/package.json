@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A browser-based zombie defense game where players protect their trench from waves of zombies.",
   "main": "src/js/game.js",
+  "type": "module",
   "scripts": {
-    "start": "live-server src",
-    "test": "jest"
+    "start": "npx live-server src",
+    "test": "jest",
+    "dev": "npm start"
   },
   "keywords": [
     "game",

@@ -12,11 +12,14 @@
         <p>Defend your base against waves of zombies using drones!</p>
     </header>
     <main>
-        <canvas id="gameCanvas"></canvas>
+        <div id="game-container">
+            <canvas id="gameCanvas"></canvas>
+            <div id="hud">
+                <div id="score">Score: <span>0</span></div>
+                <div id="health">Health: <span>100</span></div>
+            </div>
+        </div>
     </main>
-    <script src="js/utils.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/enemies.js"></script>
-    <script src="js/game.js"></script>
+    <script type="module" src="js/game.js"></script>
 </body>
 </html>

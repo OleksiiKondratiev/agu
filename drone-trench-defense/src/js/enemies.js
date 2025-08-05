@@ -1,4 +1,4 @@
-class Enemy {
+export class Enemy {
     constructor(type, health, damage, speed) {
         this.type = type;
         this.health = health;
@@ -29,7 +29,7 @@ const zombieTypes = [
     new Enemy('Brute', 100, 20, 0.5)
 ];
 
-function spawnEnemy(type) {
+export function spawnEnemy(type) {
     const enemy = zombieTypes.find(z => z.type === type);
     if (enemy) {
         console.log(`Spawned a ${enemy.type} with ${enemy.health} health.`);
@@ -38,6 +38,3 @@ function spawnEnemy(type) {
     console.error('Enemy type not found!');
     return null;
 }
-
-// Exporting the Enemy class and spawnEnemy function for use in other modules
-export { Enemy, spawnEnemy };

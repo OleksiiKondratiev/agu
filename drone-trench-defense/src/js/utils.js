@@ -1,14 +1,12 @@
-Sure, here's the contents for the file: /drone-trench-defense/src/js/utils.js
-
 // Utility functions for the Drone Trench Defense game
 
 // Function to generate a random number between min and max
-function getRandomNumber(min, max) {
+export function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Function to check for collision between two objects
-function checkCollision(obj1, obj2) {
+export function checkCollision(obj1, obj2) {
     return (
         obj1.x < obj2.x + obj2.width &&
         obj1.x + obj1.width > obj2.x &&
@@ -18,7 +16,7 @@ function checkCollision(obj1, obj2) {
 }
 
 // Function to load an image and return a promise
-function loadImage(src) {
+export function loadImage(src) {
     return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = src;
