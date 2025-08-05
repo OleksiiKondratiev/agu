@@ -1,28 +1,16 @@
-// player.js
-
 export default class Player {
-    constructor(name, health, damage) {
-        this.name = name;
-        this.health = health;
-        this.damage = damage;
-        this.position = { x: 0, y: 0 };
+    constructor() {
+        this.x = 100;
+        this.y = 300;
+        this.width = 40;
+        this.height = 20;
     }
-
-    move(x, y) {
-        this.position.x += x;
-        this.position.y += y;
+    setPosition(x, y) {
+        this.x = x;
+        this.y = y;
     }
-
-    attack(target) {
-        if (target.health > 0) {
-            target.health -= this.damage;
-            console.log(`${this.name} attacks ${target.name} for ${this.damage} damage!`);
-        } else {
-            console.log(`${target.name} is already defeated!`);
-        }
-    }
-
-    isAlive() {
-        return this.health > 0;
+    draw(ctx) {
+        ctx.fillStyle = '#4CAF50';
+        ctx.fillRect(this.x - this.width/2, this.y - this.height/2, this.width, this.height);
     }
 }
