@@ -1,0 +1,22 @@
+{
+  "name": "drone-trench-defense",
+  "version": "1.0.0",
+  "description": "A browser-based zombie defense game where players protect their trench from waves of zombies.",
+  "main": "src/js/game.js",
+  "scripts": {
+    "start": "live-server src",
+    "test": "jest"
+  },
+  "keywords": [
+    "game",
+    "zombie",
+    "defense",
+    "html5"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.0",
+    "live-server": "^1.2.1"
+  }
+}
