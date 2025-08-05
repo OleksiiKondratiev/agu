@@ -1,6 +1,7 @@
 # Drone Trench Defense
 
 ## Game Description
+
 Drone Trench Defense is an HTML5 browser-based game where players must defend their base from waves of zombies using drones. Players can strategically place drones, upgrade their capabilities, and utilize various power-ups to fend off increasingly difficult enemies.
 
 ## Implementation Notes
@@ -11,6 +12,7 @@ Drone Trench Defense is an HTML5 browser-based game where players must defend th
 - **Testing**: Unit tests will be implemented for critical game functions to ensure reliability and performance.
 
 ## Future Enhancements
+
 - **Multiplayer Mode**: Consider adding a multiplayer mode where players can team up to defend against zombies.
 - **Leaderboard**: Implement a leaderboard to track high scores and encourage competition among players.
 - **Story Mode**: Develop a narrative-driven story mode with missions and objectives.
